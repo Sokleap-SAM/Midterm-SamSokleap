@@ -4,55 +4,44 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-
-<?import javafx.scene.control.TableView?> 
 <?import javafx.scene.control.TableColumn?>
-
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/24"
-   xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
    <children>
       <Label layoutX="95.0" layoutY="26.0" text="Forbidden Finder" textAlignment="CENTER">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <HBox prefHeight="23.0" prefWidth="365.0" spacing="40.0">
+      <HBox prefHeight="23.0" prefWidth="500.0" spacing="40.0">
          <children>
-            <TextField fx:id="directoryPathField" promptText="Directory Path" />
-            <Button fx:id="openFolderButton" mnemonicParsing="false" text="Open Folder"
-               onAction="#handleOpenFolder" />
+            <TextField fx:id="directoryPathField" promptText="Directory Path" HBox.hgrow="ALWAYS" />
+            <Button fx:id="openFolderButton" mnemonicParsing="false" onAction="#handleOpenFolder" text="Open Folder" />
          </children>
       </HBox>
-      <HBox prefHeight="23.0" prefWidth="365.0" spacing="40.0">
+      <HBox prefHeight="23.0" prefWidth="500.0" spacing="40.0">
          <children>
-            <TextField fx:id="fileField" promptText="File name" />
-            <Button fx:id="openForbiddenFileButton" mnemonicParsing="false"
-               text="Open Forbidden File" onAction="#handleOpenForbiddenFile" />
+            <TextField fx:id="fileField" promptText="File name" HBox.hgrow="ALWAYS" />
+            <Button fx:id="openForbiddenFileButton" mnemonicParsing="false" onAction="#handleOpenForbiddenFile" text="Open Forbidden File" />
          </children>
       </HBox>
 
       <HBox layoutX="15.0" layoutY="200.0" prefHeight="35.0" prefWidth="365.0" spacing="9.0">
          <children>
-            <Button fx:id="forbiddenStartButton" mnemonicParsing="false"
-               onAction="#handleForbiddenStart" prefHeight="25.0" prefWidth="65.0" text="Start" />
-            <Button fx:id="forbiddenPauseButton" mnemonicParsing="false"
-               onAction="#handleForbiddenPause" prefHeight="25.0" prefWidth="65.0" text="Pause" />
-            <Button fx:id="forbiddenResumeButton" mnemonicParsing="false"
-               onAction="#handleForbiddenResume" prefHeight="25.0" prefWidth="65.0" text="Resume" />
-            <Button fx:id="forbiddenStopButton" mnemonicParsing="false"
-               onAction="#handleForbiddenStop" prefHeight="25.0" prefWidth="65.0" text="stop" />
-            <Button fx:id="forbiddenResetButton" mnemonicParsing="false"
-               onAction="#handleForbiddenReset" prefHeight="25.0" prefWidth="65.0" text="Reset" />
+            <Button fx:id="forbiddenStartButton" mnemonicParsing="false" onAction="#handleForbiddenStart" prefHeight="25.0" prefWidth="65.0" text="Start" />
+            <Button fx:id="forbiddenPauseButton" mnemonicParsing="false" onAction="#handleForbiddenPause" prefHeight="25.0" prefWidth="65.0" text="Pause" />
+            <Button fx:id="forbiddenResumeButton" mnemonicParsing="false" onAction="#handleForbiddenResume" prefHeight="25.0" prefWidth="65.0" text="Resume" />
+            <Button fx:id="forbiddenStopButton" mnemonicParsing="false" onAction="#handleForbiddenStop" prefHeight="25.0" prefWidth="65.0" text="stop" />
+            <Button fx:id="forbiddenResetButton" mnemonicParsing="false" onAction="#handleForbiddenReset" prefHeight="25.0" prefWidth="65.0" text="Reset" />
          </children>
       </HBox>
 
-      <TableView fx:id="reportTableView" prefHeight="250.0" prefWidth="360.0">
+      <TableView fx:id="reportTableView" prefHeight="250.0" prefWidth="500.0">
          <columns>
             <TableColumn fx:id="fileNameColumn" prefWidth="75.0" text="Filename" />
             <TableColumn fx:id="countColumn" prefWidth="75.0" text="Forbidden Word Count" />
@@ -64,8 +53,7 @@
          </columnResizePolicy>
       </TableView>
 
-      <ProgressBar fx:id="forbiddenProgressBar" layoutX="15.0" layoutY="460.0" prefHeight="26.0"
-         prefWidth="365.0" progress="0.0" />
+      <ProgressBar fx:id="forbiddenProgressBar" layoutX="15.0" layoutY="460.0" prefHeight="26.0" prefWidth="500.0" progress="0.0" />
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
