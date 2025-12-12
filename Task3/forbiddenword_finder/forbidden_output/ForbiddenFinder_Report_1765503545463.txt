@@ -1,0 +1,7 @@
+--- Forbidden Finder Report ---
+
+
+Found Files Containing Forbidden Words:
+None found.
+
+--- 10 Most Popular Forbidden Words ---

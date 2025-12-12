@@ -1,0 +1,10 @@
+--- Forbidden Finder Report ---
+Start Directory: D:\Midterm-SamSokleap\Task3\Forbidden_Folder
+Output Directory: forbidden_output
+Files Processed: 2
+-------------------------------
+
+Found Files Containing Forbidden Words:
+None found.
+
+--- 10 Most Popular Forbidden Words ---

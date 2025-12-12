@@ -1,0 +1,9 @@
+--- Forbidden Finder Report ---
+
+
+Found Files Containing Forbidden Words:
+File: a.txt | Replacements: 342 | Path: D:\Midterm-SamSokleap\Task3\Forbidden_Folder
+
+
+--- 10 Most Popular Forbidden Words ---
+: 342 replacements
